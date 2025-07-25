@@ -11,7 +11,7 @@ const paymentRoutes = require("./routes/Payments");
 const contactUsRoute = require("./routes/Contact");
 const database = require("./config/database");
 const cookieParser = require("cookie-parser");
-const cors = require("cors");
+const cors = require("cors"); 
 const { cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
 // const dotenv = require("dotenv");
@@ -30,7 +30,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "*",
+		origin: "https://localhost:3000",
 		credentials: true,
 	})
 );
